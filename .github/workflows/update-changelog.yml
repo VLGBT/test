@@ -1,8 +1,8 @@
 name: Live Changelog
 on:
   push:
-    branches:
-      - main
+    tag:
+      - 'v*.*.*'
 
 permissions:
   contents: write  # чтобы Action мог пушить изменения в репозиторий
