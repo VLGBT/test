@@ -1,4 +1,4 @@
-name: Update Changelog
+name: Generate Changelog
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write  # нужно, чтобы коммитить обратно
+  contents: write
 
 jobs:
   changelog:
@@ -16,21 +16,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # нужен полный git history для генерации changelog
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install conventional-changelog-cli
-        run: npm install -g conventional-changelog-cli
+      - name: Install dependencies
+        run: |
+          npm install --global standard-version
 
       - name: Generate changelog
         run: |
-          conventional-changelog -p angular -i CHANGELOG.md -s
+          # обновляет CHANGELOG.md и версию в package.json, если есть
+          standard-version --skip.tag --skip.commit
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add CHANGELOG.md
-          git commit -m "chore: update changelog [skip ci]" || echo "No changes to commit"
+          git add CHANGELOG.md package.json || true
+          git commit -m "chore: update changelog [skip ci]" || echo "No changes"
           git push
