@@ -1,35 +1,53 @@
-name: Live Changelog
+name: Auto Release
+
+# Запускать при пуше тегов вида v1.2.3
 on:
   push:
-    tag:
+    tags:
       - 'v*.*.*'
 
-permissions:
-  contents: write  # чтобы Action мог пушить изменения в репозиторий
-
 jobs:
-  update‑changelog:
+  release:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      # 1. Клонируем репозиторий
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: true
 
-      - name: Generate changelog
-        uses: orhun/git-cliff-action@v4
-        id: git-cliff
+      # 2. Опционально: установка Ruby для github-changelog-generator
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          config: cliff.toml       # файл конфигурации (можешь назвать по‑другому)
-          args: --verbose          # дополнительные аргументы, если хочешь
+          ruby-version: '3.2'
+
+      # 3. Устанавливаем github-changelog-generator
+      - name: Install Changelog Generator
+        run: gem install github_changelog_generator
+
+      # 4. Генерируем changelog для нового релиза
+      - name: Generate Changelog
+        id: changelog
         env:
-          OUTPUT: CHANGELOG.md
-          GITHUB_REPO: ${{ github.repository }}
-
-      - name: Commit and push changelog
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add CHANGELOG.md
-          git diff --cached --quiet || (git commit -m "chore: update live changelog" && git push)
+          github_changelog_generator \
+            --user ${{ github.repository_owner }} \
+            --project ${{ github.event.repository.name }} \
+            --future-release ${{ github.ref_name }} \
+            --no-merge \
+            --unreleased-only \
+            --output temp_changelog.md
+          echo "changelog<<EOF" >> $GITHUB_OUTPUT
+          cat temp_changelog.md >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      # 5. Создаем GitHub Release с содержимым changelog
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          body: ${{ steps.changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
