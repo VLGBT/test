@@ -4,26 +4,32 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # чтобы Action мог пушить изменения в репозиторий
+
 jobs:
-  changelog:
+  update‑changelog:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          persist-credentials: true  # чтобы можно было пушить обратно
-
-      - name: Install git-cliff
-        run: |
-          curl -sSL https://github.com/orhun/git-cliff/releases/latest/download/git-cliff-x86_64-unknown-linux-gnu.tar.gz \
-          | tar -xz
-          sudo mv git-cliff /usr/local/bin/git-cliff
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Generate changelog
-        run: git cliff -o CHANGELOG.md
+        uses: orhun/git-cliff-action@v4
+        id: git-cliff
+        with:
+          config: cliff.toml       # файл конфигурации (можешь назвать по‑другому)
+          args: --verbose          # дополнительные аргументы, если хочешь
+        env:
+          OUTPUT: CHANGELOG.md
+          GITHUB_REPO: ${{ github.repository }}
 
       - name: Commit and push changelog
         run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add CHANGELOG.md
           git diff --cached --quiet || (git commit -m "chore: update live changelog" && git push)
