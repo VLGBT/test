@@ -1,4 +1,4 @@
-name: Generate Changelog
+name: Changelog
 on:
   push:
     branches:
@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install git-cliff
-        run: sudo apt-get install -y git-cliff
-      - name: Generate changelog
-        run: git cliff --tag ${{ github.ref_name }} -o CHANGELOG.md
-      - name: Commit and push changelog
-        run: |
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install -g conventional-changelog-cli
+      - run: conventional-changelog -p angular -i CHANGELOG.md -s
+      - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add CHANGELOG.md
-          git commit -m "chore: update changelog for ${{ github.ref_name }}"
+          git commit -m "chore: update changelog"
           git push
