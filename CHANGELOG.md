@@ -4,10 +4,18 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🚀 Features
+
+- Update update-changelog.yml
+
 ### 🐛 Bug Fixes
 
 - Исправил что то
 - Новую фи
+- Update update-changelog.yml
+- Update update-changelog.yml
+- Update update-changelog.yml
+- Update update-changelog.yml
 
 ## [0.1.2] - 2025-10-30
 
