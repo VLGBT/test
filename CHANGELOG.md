@@ -3,13 +3,11 @@
 
 ### Feat
 
-
 - Update update-changelog.yml ([b04e895](https://github.com/VLGBT/test/commit/b04e89543f1bc5e3b3a10ef3804dba9002603e07))
 
 
 
 ### Fix
-
 
 - исправил что то ([cb32bbf](https://github.com/VLGBT/test/commit/cb32bbf6302a22231b5093a3f79d3a1b7acc0b17))
 
@@ -31,12 +29,13 @@
 
 - Update cliff.toml ([03bdfb6](https://github.com/VLGBT/test/commit/03bdfb62e37411894690943233329bf9449645fb))
 
+- Update cliff.toml ([88afdb9](https://github.com/VLGBT/test/commit/88afdb9928c7c01b1e2ee8218bf1cd0c0f810077))
+
 
 
 
 
 ### Docs
-
 
 - Добавили в доку 2 ([079bad2](https://github.com/VLGBT/test/commit/079bad2dd89246d4ed66fcdc84d906052aadbf6d))
 
@@ -46,13 +45,11 @@
 
 ### Feat
 
-
 - Добавили новую фычу ([6aaf072](https://github.com/VLGBT/test/commit/6aaf072621d7cf0162393634267720156cc3558d))
 
 
 
 ### Fix
-
 
 - Исравил ошибку ([305fba6](https://github.com/VLGBT/test/commit/305fba6afe4a69605ec327beea7d87ffd93553d9))
 
@@ -60,13 +57,11 @@
 
 ### Perf
 
-
 - Улучшена производительность ([3b8b1fa](https://github.com/VLGBT/test/commit/3b8b1fa798920876afc705fd521c6bc9d7db2934))
 
 
 
 ### Refactor
-
 
 - Исправили архитектуру ([5c96af5](https://github.com/VLGBT/test/commit/5c96af55cb00f0d784af6e2bdfc4262377796215))
 
@@ -75,7 +70,6 @@
 
 
 ### Chore
-
 
 - update changelog [skip ci] ([8a5bbce](https://github.com/VLGBT/test/commit/8a5bbce1580ec07e410d936967c9a314872e40d7))
 
@@ -95,7 +89,6 @@
 
 ### Docs
 
-
 - документес ([842d945](https://github.com/VLGBT/test/commit/842d94524b43e18597807fabe175b1db0a2a4c90))
 
 - Создал docs ([af1ffa7](https://github.com/VLGBT/test/commit/af1ffa7297f0629d5e25ebf581ea0988ef0898c1))
@@ -108,7 +101,6 @@
 
 ### Feat
 
-
 - Добавил action. должно заработать ([fcec62f](https://github.com/VLGBT/test/commit/fcec62fb403e20b9a99f99b9004ed5eb3a33f82e))
 
 - features ([0bdeb2e](https://github.com/VLGBT/test/commit/0bdeb2ef134a01b9ffd2cff89f48cec729f33843))
@@ -118,7 +110,6 @@
 
 
 ### Fix
-
 
 - теперь форма conventional ([f011303](https://github.com/VLGBT/test/commit/f011303ab825646f94cb94d52355f3b4b4ee24e1))
 
@@ -144,13 +135,11 @@
 
 ### Perf
 
-
 - перформанс ([7afacd7](https://github.com/VLGBT/test/commit/7afacd768f26bf5f02d6cd17cc3095dbb894c495))
 
 
 
 ### Refactor
-
 
 - рефакторинг ([05936aa](https://github.com/VLGBT/test/commit/05936aa950fa8a26bfae03b07da79355a78faaa5))
 
@@ -158,13 +147,11 @@
 
 ### Style
 
-
 - навалил стиля ([2bf1353](https://github.com/VLGBT/test/commit/2bf1353c161e55b1c7e1d415c8d2ee7e61fea231))
 
 
 
 ### Test
-
 
 - тестовая хуита ([07aba94](https://github.com/VLGBT/test/commit/07aba942d66e565c492d4f81137b54ee70c85367))
 
