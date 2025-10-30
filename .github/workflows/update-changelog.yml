@@ -40,7 +40,8 @@ jobs:
     # Шаг для генерации файла CHANGELOG.md
     - name: Generate Changelog
       # Запуск git-cliff с указанием конфигурационного файла и выходного файла
-      run: git-cliff --config cliff.toml --output CHANGELOG.md
+      #run: git-cliff --config cliff.toml --output CHANGELOG.md
+      run: git-cliff --config cliff.toml --output CHANGELOG.md --repo-url https://github.com/${{ github.repository }}
      
     # Шаг для коммита изменений
     - name: Commit Changelog
