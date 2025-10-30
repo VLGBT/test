@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### 🐛 Bug Fixes
 
 - Исравил ошибку
+- Исправил что то
 
 ### 🚜 Refactor
 
