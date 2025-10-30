@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 - Update update-changelog.yml
 - Update update-changelog.yml
 - Update update-changelog.yml
+- Update cliff.toml
 
 ## [0.1.2] - 2025-10-30
 
