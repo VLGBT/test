@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes
 
+- add tag v0.1.5 - ([0e21366](https://github.com/cocogitto/cocogitto/commit/0e21366976b0325b43543530dd4d594f297985fa)) - Do_fomin
+
+---
+## [0.1.5](https://github.com/cocogitto/cocogitto/compare/v0.1.4..v0.1.5) - 2025-10-30
+
+### Bug Fixes
+
 - Фич - ([b5ec6f0](https://github.com/cocogitto/cocogitto/commit/b5ec6f056ed22e5676d787d553e63c34397d3830)) - Do_fomin
 
 ### Refactoring
