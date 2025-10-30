@@ -4,13 +4,6 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
-### 🐛 Bug Fixes
-
-- Добавил строку
-- Удалено
-
-## [0.0.1] - 2025-10-29
-
 ### 🚀 Features
 
 - Добавил action. должно заработать
@@ -27,6 +20,8 @@ All notable changes to this project will be documented in this file.
 - Update-changelog.yml
 - New action
 - Удалил лишнее
+- Добавил строку
+- Удалено
 
 ### 🚜 Refactor
 
@@ -37,6 +32,7 @@ All notable changes to this project will be documented in this file.
 - Документес
 - Создал docs
 - Добавили чуть в доку
+- Добавил в доку
 
 ### ⚡ Performance
 
