@@ -1,13 +1,9 @@
 [git]
-repo_url = "https://github.com/${GITHUB_REPOSITORY}"  # переменная окружения из GitHub Actions
+repo_url = "https://github.com/VLGBT/test"
 
 [changelog]
 body = """
-{% for group, commits in commits | group_by(attribute="group") %}
-### {{ group | upper_first }}
-
 {% for commit in commits %}
 - {{ commit.message | trim }} ([{{ commit.id | truncate(length=7, end="") }}]({{ repo_url }}/commit/{{ commit.id }}))
-{% endfor %}
 {% endfor %}
 """
