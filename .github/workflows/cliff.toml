@@ -2,10 +2,10 @@
 body = """
 {% set repo_url = "https://github.com/VLGBT/test" %}
 
-{% for tag, commits in commits | group_by(attribute="tag") %}
-## [{{ tag.name | default('Unreleased') }}] - {{ tag.date | default('Unreleased') }}
+{% for version, version_commits in commits | group_by(attribute="tag") %}
+## [{{ version | default('Unreleased') }}] - {{ version_commits[0].date | default('Unreleased') }}
 
-{% for group, group_commits in commits | group_by(attribute="group") %}
+{% for group, group_commits in version_commits | group_by(attribute="group") %}
 ### {{ group | upper_first }}
 
 {% for commit in group_commits %}
