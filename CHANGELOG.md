@@ -8,8 +8,6 @@ All notable changes to this project will be documented in this file. See [conven
 ### Bug Fixes
 
 - **(toml)** Добавлен .github/workflows/cliff.toml - ([309f969](https://github.com/cocogitto/cocogitto/commit/309f9691c72141904470e5cedfd8c00a0c4ed7c1)) - VLGBT
-- исправил что то - ([cb32bbf](https://github.com/cocogitto/cocogitto/commit/cb32bbf6302a22231b5093a3f79d3a1b7acc0b17)) - Do_fomin
-- новую фи - ([6167844](https://github.com/cocogitto/cocogitto/commit/6167844e2a84da4e376bb5dc8e3083ee8e8c9fd4)) - Do_fomin
 - Update update-changelog.yml - ([d2909f7](https://github.com/cocogitto/cocogitto/commit/d2909f776380ce352263f175b3b542bdf5f6ca64)) - VLGBT
 - Update update-changelog.yml - ([db9a0cc](https://github.com/cocogitto/cocogitto/commit/db9a0cc1f673dbd2d450073cd37628c4e3ea4b61)) - VLGBT
 - Update update-changelog.yml - ([df9d3ab](https://github.com/cocogitto/cocogitto/commit/df9d3ab46dc86b705938d250a871adbeac4623e8)) - VLGBT
@@ -23,10 +21,19 @@ All notable changes to this project will be documented in this file. See [conven
 - Update cliff.toml - ([a28fb9c](https://github.com/cocogitto/cocogitto/commit/a28fb9ceb0edf2918b34a22136a0650900c92326)) - VLGBT
 - Update cliff.toml - ([6892c0d](https://github.com/cocogitto/cocogitto/commit/6892c0d2d196ccafd2e5a928dac13bd1c1d9244e)) - VLGBT
 - Update cliff.toml - ([9df7d4c](https://github.com/cocogitto/cocogitto/commit/9df7d4c44d1c2e559df184188a62ba1bbb0b48fe)) - VLGBT
+- ФИ заработало!!! - ([b4a7e9d](https://github.com/cocogitto/cocogitto/commit/b4a7e9df213ac9b5453f41e08376bcf1bd780f9d)) - Do_fomin
 
 ### Features
 
 - Update update-changelog.yml - ([b04e895](https://github.com/cocogitto/cocogitto/commit/b04e89543f1bc5e3b3a10ef3804dba9002603e07)) - VLGBT
+
+---
+## [0.1.3](https://github.com/cocogitto/cocogitto/compare/v0.1.2..v0.1.3) - 2025-10-30
+
+### Bug Fixes
+
+- исправил что то - ([cb32bbf](https://github.com/cocogitto/cocogitto/commit/cb32bbf6302a22231b5093a3f79d3a1b7acc0b17)) - Do_fomin
+- новую фи - ([6167844](https://github.com/cocogitto/cocogitto/commit/6167844e2a84da4e376bb5dc8e3083ee8e8c9fd4)) - Do_fomin
 
 ---
 ## [0.1.2](https://github.com/cocogitto/cocogitto/compare/v0.1.0..v0.1.2) - 2025-10-30
