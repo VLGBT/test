@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### Bug Fixes
 
+- Фич - ([b5ec6f0](https://github.com/cocogitto/cocogitto/commit/b5ec6f056ed22e5676d787d553e63c34397d3830)) - Do_fomin
+
+---
+## [0.1.4](https://github.com/cocogitto/cocogitto/compare/v0.1.3..v0.1.4) - 2025-10-30
+
+### Bug Fixes
+
 - **(toml)** Добавлен .github/workflows/cliff.toml - ([309f969](https://github.com/cocogitto/cocogitto/commit/309f9691c72141904470e5cedfd8c00a0c4ed7c1)) - VLGBT
 - Update update-changelog.yml - ([d2909f7](https://github.com/cocogitto/cocogitto/commit/d2909f776380ce352263f175b3b542bdf5f6ca64)) - VLGBT
 - Update update-changelog.yml - ([db9a0cc](https://github.com/cocogitto/cocogitto/commit/db9a0cc1f673dbd2d450073cd37628c4e3ea4b61)) - VLGBT
