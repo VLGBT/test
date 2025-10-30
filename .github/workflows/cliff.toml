@@ -1,18 +1,10 @@
 [changelog]
 body = """
-{% set repo_url = "https://github.com/VLGBT/test" %}
-
-{% for version, version_commits in commits | group_by(attribute="tag") %}
-## [{{ version | default('Unreleased') }}] - {{ version_commits[0].date | default('Unreleased') }}
-
-{% for group, group_commits in version_commits | group_by(attribute="group") %}
-### {{ group | upper_first }}
-
-{% for commit in group_commits %}
-- {{ commit.message | trim }} ([{{ commit.id | truncate(length=7, end="") }}]({{ repo_url }}/commit/{{ commit.id }}))
-{% endfor %}
-
-{% endfor %}
-
+{% for group, commits in commits | group_by(attribute="group") %}
+    ### {{ group | upper_first }}
+    {% for commit in commits %}
+        - {{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/VLGBT/test/commit/{{ commit.id }}))
+    {% endfor %}
 {% endfor %}
 """
+
