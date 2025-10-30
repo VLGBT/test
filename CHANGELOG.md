@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### 🐛 Bug Fixes
 
 - Исправил что то
+- Новую фи
 
 ## [0.1.2] - 2025-10-30
 
