@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🐛 Bug Fixes
+
+- Исправил что то
+
+## [0.1.2] - 2025-10-30
+
 ### 🚀 Features
 
 - Добавили новую фычу
@@ -11,7 +17,6 @@ All notable changes to this project will be documented in this file.
 ### 🐛 Bug Fixes
 
 - Исравил ошибку
-- Исправил что то
 
 ### 🚜 Refactor
 
