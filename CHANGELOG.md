@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file. See [conven
 
 - Фич - ([b5ec6f0](https://github.com/cocogitto/cocogitto/commit/b5ec6f056ed22e5676d787d553e63c34397d3830)) - Do_fomin
 
+### Refactoring
+
+- Поправки в архитектуру - ([46b562a](https://github.com/cocogitto/cocogitto/commit/46b562a9f610319037248f13be4520fb8e851d7b)) - Do_fomin
+
 ---
 ## [0.1.4](https://github.com/cocogitto/cocogitto/compare/v0.1.3..v0.1.4) - 2025-10-30
 
