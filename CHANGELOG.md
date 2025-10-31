@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
+Все заметные изменения в этом проекте будут задокументированы в этом файле. Рекомендации по фиксации смотрите в разделе [conventional commits](https://www.conventionalcommits.org/).
 
 ---
 ## [unreleased]
@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file. See [conven
 - какой то фикс - ([1697cd3](https://github.com/VLGBT/test/commit/1697cd3c33a2121eb441ffce8325dd1d79e3bb35)) - Do_fomin
 - Update cliff.toml - ([93c6bc0](https://github.com/VLGBT/test/commit/93c6bc034ea0657e2da6d84487a8964d2e02e9b6)) - VLGBT
 - Update CHANGELOG.md - ([58f0ebc](https://github.com/VLGBT/test/commit/58f0ebcf2c1c568840238bdb4a8d0b317b554a2a)) - VLGBT
+- Update cliff.toml - ([7a24b8e](https://github.com/VLGBT/test/commit/7a24b8ec2c7fce13b0cb37fd837cbc965a0f1d6d)) - VLGBT
 
 ---
 ## [0.1.5](https://github.com/VLGBT/test/compare/v0.1.4..v0.1.5) - 2025-10-30
