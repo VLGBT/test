@@ -7,12 +7,19 @@
 
 ### Bug Fixes
 
-- add tag v0.1.5 - ([0e21366](https://github.com/VLGBT/test/commit/0e21366976b0325b43543530dd4d594f297985fa)) - Do_fomin
-- какой то фикс - ([1697cd3](https://github.com/VLGBT/test/commit/1697cd3c33a2121eb441ffce8325dd1d79e3bb35)) - Do_fomin
 - Update cliff.toml - ([93c6bc0](https://github.com/VLGBT/test/commit/93c6bc034ea0657e2da6d84487a8964d2e02e9b6)) - VLGBT
 - Update CHANGELOG.md - ([58f0ebc](https://github.com/VLGBT/test/commit/58f0ebcf2c1c568840238bdb4a8d0b317b554a2a)) - VLGBT
 - Update cliff.toml - ([7a24b8e](https://github.com/VLGBT/test/commit/7a24b8ec2c7fce13b0cb37fd837cbc965a0f1d6d)) - VLGBT
 - Update printer.cfg - ([9922d06](https://github.com/VLGBT/test/commit/9922d064d644ad4b9199272b9ffb0ac5c433ba88)) - VLGBT
+- пример для Жени - ([08d368a](https://github.com/VLGBT/test/commit/08d368af803739db0875d5099e73ab16863b32d1)) - Do_fomin
+
+---
+## [0.1.6](https://github.com/VLGBT/test/compare/v0.1.5..v0.1.6) - 2025-10-31
+
+### Bug Fixes
+
+- add tag v0.1.5 - ([0e21366](https://github.com/VLGBT/test/commit/0e21366976b0325b43543530dd4d594f297985fa)) - Do_fomin
+- какой то фикс - ([1697cd3](https://github.com/VLGBT/test/commit/1697cd3c33a2121eb441ffce8325dd1d79e3bb35)) - Do_fomin
 
 ---
 ## [0.1.5](https://github.com/VLGBT/test/compare/v0.1.4..v0.1.5) - 2025-10-30
