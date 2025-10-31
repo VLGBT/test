@@ -46,7 +46,7 @@ trim = true
 # postprocessors
 postprocessors = [
     # Replace the placeholder `<REPO>` with a URL.
-    { pattern = '\$REPO', replace = "https://github.com/cocogitto/cocogitto" }, # replace repository URL
+    { pattern = '\$REPO', replace = "https://github.com/VLGBT/test" }, # replace repository URL
 ]
 
 [git]
