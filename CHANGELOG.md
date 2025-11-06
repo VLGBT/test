@@ -5,6 +5,13 @@
 ---
 ## [unreleased]
 
+### Features
+
+- create test.cfg - ([6c2070a](https://github.com/VLGBT/test/commit/6c2070afb3df34942cb2c47508e8d7d7fa54dbbd)) - Do_fomin
+
+---
+## [0.1.7](https://github.com/VLGBT/test/compare/0.1.6..v0.1.7) - 2025-11-06
+
 ### Bug Fixes
 
 - пример для Жени - ([08d368a](https://github.com/VLGBT/test/commit/08d368af803739db0875d5099e73ab16863b32d1)) - Do_fomin
