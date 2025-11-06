@@ -27,8 +27,14 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v5
       with:
-        commit-message: "Обновление CHANGELOG.md"
-        title: "Обновление changelog"
-        body: "Автоматическое обновление файла CHANGELOG.md"
+        commit-message: "docs: автоматическое обновление CHANGELOG.md"
+        title: "📚 Обновление CHANGELOG.md"
+        body: |
+          Автоматическое обновление файла изменений на основе коммитов.
+          
+          *Сгенерировано с помощью git-cliff*
         branch: update-changelog
         delete-branch: true
+        labels: |
+          documentation
+          automated-pr
