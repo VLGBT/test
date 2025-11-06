@@ -1,0 +1,34 @@
+name: Generate Changelog PR
+
+on:
+  push:
+    branches: [main]
+  release:
+    types: [created]
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v5
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Download and Install git-cliff
+      run: |
+        curl -L "https://github.com/orhun/git-cliff/releases/download/v2.2.1/git-cliff-2.2.1-x86_64-unknown-linux-gnu.tar.gz" -o git-cliff.tar.gz
+        tar -xzf git-cliff.tar.gz
+        mv git-cliff-2.2.1/git-cliff /usr/local/bin/
+    
+    - name: Generate Changelog
+      run: git-cliff --config .github/workflows/cliff.toml --output CHANGELOG.md --repository .
+    
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        commit-message: "Обновление CHANGELOG.md"
+        title: "Обновление changelog"
+        body: "Автоматическое обновление файла CHANGELOG.md"
+        branch: update-changelog
+        delete-branch: true
