@@ -8,6 +8,7 @@
 ### Bug Fixes
 
 - create abracadabra - ([c646b4b](https://github.com/VLGBT/test/commit/c646b4ba417c19d0d6bbd01edb6164975583f2fa)) - Do_fomin
+- create more abracadabra - ([2694423](https://github.com/VLGBT/test/commit/2694423a6903d1afa9af7c6553cff742057f6838)) - Do_fomin
 
 ### Features
 
