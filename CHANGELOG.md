@@ -7,11 +7,18 @@
 
 ### Bug Fixes
 
+- пример для Жени - ([08d368a](https://github.com/VLGBT/test/commit/08d368af803739db0875d5099e73ab16863b32d1)) - Do_fomin
+- удалена всякая всячина - ([f1def9d](https://github.com/VLGBT/test/commit/f1def9da61bcf93de7c8f28f7ec05b2dedd02c83)) - Do_fomin
+
+---
+## [0.1.6](https://github.com/VLGBT/test/compare/v0.1.6..0.1.6) - 2025-10-31
+
+### Bug Fixes
+
 - Update cliff.toml - ([93c6bc0](https://github.com/VLGBT/test/commit/93c6bc034ea0657e2da6d84487a8964d2e02e9b6)) - VLGBT
 - Update CHANGELOG.md - ([58f0ebc](https://github.com/VLGBT/test/commit/58f0ebcf2c1c568840238bdb4a8d0b317b554a2a)) - VLGBT
 - Update cliff.toml - ([7a24b8e](https://github.com/VLGBT/test/commit/7a24b8ec2c7fce13b0cb37fd837cbc965a0f1d6d)) - VLGBT
 - Update printer.cfg - ([9922d06](https://github.com/VLGBT/test/commit/9922d064d644ad4b9199272b9ffb0ac5c433ba88)) - VLGBT
-- пример для Жени - ([08d368a](https://github.com/VLGBT/test/commit/08d368af803739db0875d5099e73ab16863b32d1)) - Do_fomin
 
 ---
 ## [0.1.6](https://github.com/VLGBT/test/compare/v0.1.5..v0.1.6) - 2025-10-31
